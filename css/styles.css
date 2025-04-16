@@ -1,10 +1,16 @@
-/* 🌞 Modo Claro */
-:root {
-  --main-color: #ff5c80;
+/* paleta padrão (light) */
+:root,
+[data-bs-theme="light"] {
+  --main-color: #c81c6f;
   --bg-color: #fdf2f8;
-  --text-color: #333333;
-  --card-bg: #ffffff;
-  --card-shadow: rgba(0, 0, 0, 0.08);
+  --text-color: #333;
+}
+
+/* paleta escura */
+[data-bs-theme="dark"] {
+  --main-color: #f43096; 
+  --bg-color: #1a1a1a;
+  --text-color: #f8f9fa;
 }
 
 body {
@@ -23,10 +29,17 @@ header {
 }
 
 .card {
-  background-color: var(--card-bg);
   border: none;
-  box-shadow: 0 4px 12px var(--card-shadow);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
+  background-color: white;
+  color: var(--text-color);
+}
+
+/* Para escuro: deixar o card escuro também */
+[data-bs-theme="dark"] .card {
+  background-color: #2a2a2a;
+  color: var(--text-color);
 }
 
 .card:hover {
@@ -48,15 +61,4 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
-}
-
-/* 🌙 Modo Escuro */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-color: #ff5c80;
-    --bg-color: #121212;
-    --text-color: #eaeaea;
-    --card-bg: #1f1f1f;
-    --card-shadow: rgba(0, 0, 0, 0.4);
-  }
 }
