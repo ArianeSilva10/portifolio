@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="auto">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,9 +11,33 @@
 </head>
 <body>
 
+  <div class="dropdown position-absolute top-0 end-0 p-3">
+    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownThemeButton" data-bs-toggle="dropdown" aria-expanded="false">
+      Theme
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownThemeButton">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+          Light Theme
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+          Dark Theme
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+          Auto
+        </button>
+      </li>
+    </ul>
+  </div>
+
   <header class="text-center">
     <h1>F. Ariane dos Santos S.</h1>
     <p>Desenvolvedora Web / Sistemas Embarcados | Estudante de Engenharia</p>
+
   </header>
 
   <section class="container mt-5">
@@ -82,5 +106,6 @@
     &copy; 2025 - Feito por Ariane
   </footer>
 
+    <script src="./js/script.js"></script>
 </body>
 </html>
