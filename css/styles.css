@@ -1,0 +1,47 @@
+    :root {
+      --main-color: #c81c6f;
+      --bg-color: #fdf2f8;
+      --text-color: #333;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 3rem 1rem;
+    }
+
+    .section-title {
+      color: var(--main-color);
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .btn-primary {
+      background-color: var(--main-color);
+      border: none;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    
