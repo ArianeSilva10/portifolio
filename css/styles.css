@@ -11,6 +11,10 @@
   color: var(--main-color);
 }
 
+[data-bs-theme="light"] .div-nav{
+  background-color: #f43096;
+}
+
 /* paleta escura */
 [data-bs-theme="dark"] {
   --main-color: #f43096; 
@@ -21,6 +25,10 @@
 [data-bs-theme="dark"] .theme-btn{
   background-color: #580034;
   color: #ffffff;
+}
+
+[data-bs-theme="dark"] .div-nav{
+  background-color: #c81c6f;
 }
 
 body {
