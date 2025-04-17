@@ -6,11 +6,21 @@
   --text-color: #333;
 }
 
+[data-bs-theme="light"] .theme-btn{
+  background-color: #ffe0f0;
+  color: var(--main-color);
+}
+
 /* paleta escura */
 [data-bs-theme="dark"] {
   --main-color: #f43096; 
   --bg-color: #1a1a1a;
   --text-color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .theme-btn{
+  background-color: #580034;
+  color: #ffffff;
 }
 
 body {
@@ -49,6 +59,13 @@ header {
 .btn-primary {
   background-color: var(--main-color);
   border: none;
+}
+
+.list-centered {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0 auto;
+  list-style: none;
 }
 
 footer {

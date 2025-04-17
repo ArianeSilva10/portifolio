@@ -12,24 +12,16 @@
 <body>
 
   <div class="dropdown position-absolute top-0 end-0 p-3">
-    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownThemeButton" data-bs-toggle="dropdown" aria-expanded="false">
-      Theme
-    </button>
+    <button class="btn theme-btn dropdown-toggle" type="button" id="dropdownThemeButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-brightness-high"></i></button>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownThemeButton">
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
-          Light Theme
-        </button>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">Tema Claro</button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
-          Dark Theme
-        </button>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">Tema Escuro</button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
-          Auto
-        </button>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">Auto</button>
       </li>
     </ul>
   </div>
@@ -38,17 +30,44 @@
     <h1>F. Ariane dos Santos S.</h1>
     <p>Desenvolvedora Web / Sistemas Embarcados | Estudante de Engenharia</p>
 
+    <div class="container mt-3">
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container px-1 py-2 rounded" style="background-color: #c81c6f;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#sobre">Sobre Mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projetos">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </div>
+    
+
   </header>
 
   <section class="container mt-5">
-    <h2 class="section-title mb-4">Sobre Mim</h2>
+    <h2 class="section-title mb-4" id="sobre">Sobre Mim</h2>
     <p>
         Olá! Sou Ariane, estudante de Engenharia de Computação na Universidade Federal do Ceará. Meu foco atual envolve a área de Sistemas Embarcados e Desenvolvimento Web. Tenho experiência em HTML, CSS, JavaScript, PHP, C, C++, Python, além de um grande interesse por tecnologias emergentes e inovação. Estou sempre buscando aprender e me aprimorar na área de tecnologia.
     </p>
   </section>
 
   <section class="container mt-5">
-    <h2 class="section-title mb-4">Projetos</h2>
+    <h2 class="section-title mb-4" id="projetos">Projetos</h2>
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
@@ -92,10 +111,10 @@
     
   </section>
 
-  <section class="container mt-5">
-    <h2 class="section-title mb-4">Redes Sociais</h2>
+  <section class="container mt-5 text-center">
+    <h2 class="section-title mb-4" id="contato">Redes Sociais</h2>
     <p>Você pode me encontrar aqui:</p>
-    <ul>
+    <ul class="list-centered">
       <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/ariane-silva-baa827282/" target="_blank">LinkedIn</a></li>
       <li><i class="bi bi-github"></i> <a href="https://github.com/ArianeSilva10" target="_blank">GitHub</a></li>
       <li><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/_ariane89?igsh=MWMydnV2NDFyZ3NuYg==" target="_blank">Instagram</a></li>
