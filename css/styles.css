@@ -42,6 +42,14 @@ header {
   padding: 3rem 1rem;
 }
 
+
+.navbar {
+  top: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 1030;
+}
+
 .section-title {
   color: var(--main-color);
 }
@@ -70,16 +78,18 @@ header {
 }
 
 .list-centered {
-  list-style-position: inside;
-  padding-left: 0;
-  margin: 0 auto;
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 footer {
   background-color: var(--main-color);
   color: white;
-  padding: 1rem;
+  padding: 1rem 0;
   margin-top: 3rem;
 }
 
@@ -88,3 +98,17 @@ footer a {
   text-decoration: none;
 }
 
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: 1031;
+  }
+}
