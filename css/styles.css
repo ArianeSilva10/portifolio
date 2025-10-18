@@ -41,6 +41,14 @@
       0% { transform: translate(0, 0); }
       100% { transform: translate(50px, 50px); }
     }
+    .dropdown-toggle {
+      color: #8b5cf6; 
+      transition: color 0.3s ease;
+    }
+
+    [data-bs-theme="dark"] .theme-toggle i {
+      color: #6366f9;
+    }
 
     .profile-photo {
       width: 180px;
@@ -112,6 +120,10 @@
       color: #6f06ff;
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .linkedin {
+      background: #2285;
     }
 
     @keyframes fadeInUp {
