@@ -353,7 +353,7 @@
 
     /* Theme Toggle */
     .theme-toggle {
-      position: absolute;
+      position: fixed;
       top: 1rem;
       right: 1rem;
       z-index: 1001;
@@ -390,5 +390,10 @@
 
       .section-title {
         font-size: 2rem;
+      }
+
+      /* Theme Toggle */
+      .theme-toggle {
+        position: absolute;
       }
     }
