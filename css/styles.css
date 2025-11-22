@@ -317,7 +317,7 @@
     }
 
     .social-card i {
-      font-size: 3rem;
+      font-size: 1.6rem;
       margin-bottom: 1rem;
       background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
       -webkit-background-clip: text;
@@ -335,7 +335,7 @@
       padding: 0.6rem 2rem;
       font-weight: 600;
     }
-
+    
     /* Footer */
     footer {
       background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
